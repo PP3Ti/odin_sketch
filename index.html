@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchy stuff</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sketch.js" defer></script>
+</head>
+<body class="body">
+    <div class="title"><h1>Sketch some stuff</h1></div>
+    <div class="menu">
+        <div class="buttons">
+            <button class="button" id="paintBlack">Paint it black</button>
+            <button class="button" id="rainbow">Rainbow time</button>
+            <button class="button" id="resetCanvas">Reset canvas</button>
+        </div>
+        <div class="resolutionSettings">
+            <input type="range" min="1" max="64" class="slider" id="gridSizeSlider">
+            <div id="gridSliderValue"></div>
+            <button class="button" id="setGridResolutionButton">Set grid resolution</button>
+        </div>
+    </div>
+    <div class="game"></div>
+    <div class="footer">
+        <p id="toggle">Click to toggle drawing</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template: 3fr 700px 2fr /  1fr 700px 1fr;
+    background-color: rgb(201, 201, 201);
+    font-family: Roboto, sans-serif;
+}
+.title{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 4;
+    place-content: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
+}
+.menu{
+    display: grid;
+    grid-area: 2 / 1 / span 1 / 1;
+    grid-template: 1fr 1fr / 1fr;
+    justify-content: stretch;
+}
+.game{
+    display: grid;
+    grid-area: 2 / 2 / span 1 / span 1;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.footer{
+    grid-area: 3 / 1 / span 1 / span 3;
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
+}
+.buttons{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 2em;
+}
+.button{
+    background-color: white;
+    font-size: larger;
+    font-weight: 400;
+    border: 1px solid;
+    border-color: #3f4d52;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition-duration: 200ms;
+}
+#rainbow:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+}
+#paintBlack:hover{
+    color: white;
+    background-color: black;
+}
+.button:hover{
+    font-size: x-large;
+    font-weight: 600;
+}
+#setGridResolutionButton{
+    place-self: center;
+}
+.resolutionSettings{
+    display: grid;
+    grid-gap: 10px;
+    place-self: center stretch;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; 
+    height: 25px; /* Specified height */
+    background: aliceblue;
+    outline: 1px solid #d3d3d3;
+    border-radius: 1rem;
+}
+
+h1, p{
+    padding: 0;
+    margin: 0;
+}
+#toggle{
+    place-self: center;
+    font-style: italic;
+    font-weight: lighter;
+}
